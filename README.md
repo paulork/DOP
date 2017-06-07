@@ -25,11 +25,11 @@ O Organizador Pessoal tem o propósito de organizar e lembrar o usuário de seus
 - Fullcalendar - https://fullcalendar.io/
 - Postgres - https://www.postgresql.org/
 - Payara - http://www.payara.fish
-## Requisitos para funcionamento da aplicação:
+## Requisitos para funcionamento da aplicação
 - Java 8 - https://www.java.com/pt_BR/download/
 - Payara 172 (4.1.2.172) - http://www.payara.fish/downloads
 - PostgreSQL 9.4+
-## Configurações necessárias (ex: criação de banco, definição de senha de acesso ao banco, etc);
+## Configurações necessárias
 - Configuração de conexão com o banco, email e hibernate/c3p0 em "resources/commons/config.xml":
 ```xml
 <dop>
