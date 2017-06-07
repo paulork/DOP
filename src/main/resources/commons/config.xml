@@ -1,0 +1,51 @@
+<dop>
+    <banco>
+        <host>localhost</host>
+        <porta>5432</porta>
+        <owner>postgres</owner> <!-- usuário de login no banco -->
+        <senha>123</senha>
+        <db>dop</db> 
+        <schema>dop</schema> <!-- especifique um SCHEMA que não exista, ele será criado! -->
+    </banco>
+    
+    <email>
+        <mail_to>teste@teste.com</mail_to> <!-- email que receberá as notificações -->
+        <mail_user>teste</mail_user> <!-- usuario ou email para login -->
+        <mail_pass>senha</mail_pass>
+        <mail_smtp>mail.teste.com.br</mail_smtp> 
+        <mail_port>587</mail_port>
+        <mail_tls>false</mail_tls>
+        <mail_ssl>true</mail_ssl>
+    </email>
+		
+    <hibernate>
+        <hibernate.connection.url><![CDATA[jdbc:postgresql://<host>:<porta>/<db>]]></hibernate.connection.url>
+        <hibernate.connection.username><![CDATA[<username>]]></hibernate.connection.username>
+        <hibernate.connection.password><![CDATA[<password>]]></hibernate.connection.password>
+        <hibernate.connection.provider_class>org.hibernate.c3p0.internal.C3P0ConnectionProvider</hibernate.connection.provider_class>
+			
+        <hibernate.connection.driver_class>org.postgresql.Driver</hibernate.connection.driver_class>
+        <hibernate.dialect>org.hibernate.dialect.PostgreSQLDialect</hibernate.dialect>
+        <hibernate.hbm2ddl.auto>validate</hibernate.hbm2ddl.auto>
+        <hibernate.show_sql>false</hibernate.show_sql>
+        <hibernate.format_sql>false</hibernate.format_sql>
+        <hibernate.default_schema><![CDATA[<schema>]]></hibernate.default_schema>
+			
+        <!-- Configurações do C3P0 -->
+        <hibernate.c3p0.min_size>1</hibernate.c3p0.min_size>
+        <hibernate.c3p0.max_size>50</hibernate.c3p0.max_size>
+        <hibernate.c3p0.timeout>60</hibernate.c3p0.timeout>
+        <hibernate.c3p0.max_statements>0</hibernate.c3p0.max_statements>
+        <hibernate.c3p0.maxStatementsPerConnection>10</hibernate.c3p0.maxStatementsPerConnection>
+        <hibernate.c3p0.acquire_increment>1</hibernate.c3p0.acquire_increment>
+        <hibernate.c3p0.idle_test_period>60</hibernate.c3p0.idle_test_period>
+        <hibernate.c3p0.checkoutTimeout>5000</hibernate.c3p0.checkoutTimeout>
+        <hibernate.c3p0.acquireRetryDelay>1000</hibernate.c3p0.acquireRetryDelay>
+        <hibernate.c3p0.acquireRetryAttempts>5</hibernate.c3p0.acquireRetryAttempts>
+        <hibernate.c3p0.breakAfterAcquireFailure>false</hibernate.c3p0.breakAfterAcquireFailure>
+        <hibernate.c3p0.maxIdleTimeExcessConnections>30</hibernate.c3p0.maxIdleTimeExcessConnections>
+        <hibernate.c3p0.numHelperThreads>3</hibernate.c3p0.numHelperThreads>
+        <hibernate.c3p0.debugUnreturnedConnectionStackTraces>false</hibernate.c3p0.debugUnreturnedConnectionStackTraces>
+        <hibernate.c3p0.unreturnedConnectionTimeout>0</hibernate.c3p0.unreturnedConnectionTimeout>
+    </hibernate>
+</dop>

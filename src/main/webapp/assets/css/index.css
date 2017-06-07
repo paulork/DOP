@@ -1,0 +1,29 @@
+body {
+    padding-top: 5rem;
+}
+.starter-template {
+    padding: 3rem 1.5rem;
+    /*text-align: center;*/
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-nav > li {
+        float: none;
+        display: inline-block;
+    }
+    .nav-link:hover{
+        color: white !important;
+    }
+    
+    .navbar-nav > li.navbar-right {
+        float: right !important;
+    }
+}
+
+.nav { 
+    overflow-y: hidden !important;
+}
